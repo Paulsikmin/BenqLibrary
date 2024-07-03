@@ -56,8 +56,15 @@ COMMENT ON COLUMN library.Return_date IS '반납일';
 COMMENT ON COLUMN library.User_Id IS '고객아이디';
 COMMENT ON TABLE library IS '도서관';
 
-
-
+DROP SEQUENCE SEQ_BOOK_NO;
+--Sequence SEQ_BOOK_NO이(가) 삭제되었습니다.
+-- 6부터 시작하도록 만듬
+-- Sequence SEQ_BOOK_NO이(가) 생성되었습니다.
+CREATE SEQUENCE SEQ_BOOK_NO
+START WITH 6
+INCREMENT BY 1
+NOCYCLE
+NOCACHE;
 INSERT INTO book VALUES (1,'마이러브','이충호',4500,'서울문화사','코믹/순정');
 INSERT INTO book VALUES (2,'떳다 럭키맨','나베시마 오사무',4500,'코믹출판사','코믹');
 INSERT INTO book VALUES (3,'만만하게 보이지 않는 대화법','나이토 요시히토',12800,'홍익출판사','심리기술');

@@ -1,6 +1,7 @@
 package org.kh.library.view;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.kh.library.model.vo.Book;
 import org.kh.library.model.vo.Customer;
@@ -20,11 +21,11 @@ public interface LibraryViewI {
 	public String inputBookName();
 	public Library insertLibrary();
 	
-	public void dispalyBookList(ArrayList<Book> list);
+	public void displayBookList(List<Book> list);
 	public void displayMessage(String message);
 	public void displayError(String message);
 	
-	public void dispalyCustomerList(ArrayList<Customer> list);
+	public void displayCustomerList(ArrayList<Customer> list);
 	public void diplayCutomerOne(Customer customer);
 	public void displayBook(Book book);
 	
